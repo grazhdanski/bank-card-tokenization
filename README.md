@@ -1,4 +1,4 @@
-# Bank Card Tokenization Multithreaded Server and Server Client
+# Bank Card Tokenization Multithreaded Server and Client
 
 Individual project for the OOP with C# .NET elective course during the first semester of my second year at Sofia University, FMI
 
