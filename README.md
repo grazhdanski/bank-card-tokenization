@@ -16,3 +16,13 @@ Other required features:
   * Only a registered user with the required permissions can request a card number (by providing a valid token)
   * Only a registered user with the required permissions could request and save a file with a table containing all cards and their corresponding tokens, sorted by token
   * Only a registered user with the required permissions could request and save a file with a table containing all cards and their corresponding tokens, sorted by card number
+
+Note: The server does not support user registration, as that is a responsibility of another part of the system. The server only checks if a user is valid.
+
+Sample registered <user, password> pairs:
+User  Password
+-----|-----
+admin | Парола: 1234 – може да регистрира токени и да изисква номера на карти
+user1 | Парола: 321 – не може да регистрира токени, но може да изисква номера на карти
+user2 | Парола: 3211 - може да регистрира токени, но не може да изисква номера на карти
+user3 | Парола: 111 – не може да регистрира токени и не може да изисква номера на карти
