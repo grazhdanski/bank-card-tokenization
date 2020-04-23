@@ -21,7 +21,7 @@ Note: The server does not support user registration, as that is a responsibility
 
 Sample registered <user, password> pairs:
 
-User  Password
+User  | Password
 ----- | -----
 admin | Парола: 1234 – може да регистрира токени и да изисква номера на карти
 user1 | Парола: 321 – не може да регистрира токени, но може да изисква номера на карти
