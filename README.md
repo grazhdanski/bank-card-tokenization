@@ -8,3 +8,11 @@ Problem Statement: Given a 16-digit card number, generate a 16-digit isomorphic 
 * The first 12 digits of the token have to be (pseudo-) randomly generated and must not match the corresponding digits of the card number
 * The first digit of the token must not be in the set {3, 4, 5, 6}, as they are used by the major brands of bank cards
 * The sum of the token's digits must not be divisible by 10
+* There could be multiple valid tokens corresponding to a single valid card number
+
+Other required features: 
+*An access control system
+  *Only a registered user with the required permissions can register a token
+  *Only a registered user with the required permissions can request a card number (by providing a valid token)
+  *Only a registered user with the required permissions could request and save a file with a table containing all cards and their corresponding tokens, sorted by token
+  *Only a registered user with the required permissions could request and save a file with a table containing all cards and their corresponding tokens, sorted by card number
