@@ -11,8 +11,8 @@ Problem Statement: Given a 16-digit card number, generate a 16-digit isomorphic 
 * There could be multiple valid tokens corresponding to a single valid card number
 
 Other required features: 
-*An access control system
-  *Only a registered user with the required permissions can register a token
-  *Only a registered user with the required permissions can request a card number (by providing a valid token)
-  *Only a registered user with the required permissions could request and save a file with a table containing all cards and their corresponding tokens, sorted by token
-  *Only a registered user with the required permissions could request and save a file with a table containing all cards and their corresponding tokens, sorted by card number
+* An access control system
+  * Only a registered user with the required permissions can register a token
+  * Only a registered user with the required permissions can request a card number (by providing a valid token)
+  * Only a registered user with the required permissions could request and save a file with a table containing all cards and their corresponding tokens, sorted by token
+  * Only a registered user with the required permissions could request and save a file with a table containing all cards and their corresponding tokens, sorted by card number
