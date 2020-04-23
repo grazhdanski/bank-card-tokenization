@@ -24,6 +24,6 @@ Sample registered <user, password> pairs:
 User  | Password | Permissions
 ----- | -------- | ------------
 admin | Парола: 1234 | Can register tokens. Can require card numbers by token
-user1 | Парола: 321  | Cannont register tokens. Can required card numbers by token
+user1 | Парола: 321  | Cannot register tokens. Can required card numbers by token
 user2 | Парола: 3211 | Can register tokens. Cannot require card numbers by token
 user3 | Парола: 111  | Cannot register tokens. Cannot require card numbers by token
