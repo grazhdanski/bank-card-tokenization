@@ -23,7 +23,7 @@ Sample registered <user, password> pairs:
 
 User  | Password | Permissions
 ----- | -------- | ------------
-admin | Парола: 1234 | – може да регистрира токени и да изисква номера на карти
-user1 | Парола: 321  | не може да регистрира токени, но може да изисква номера на карти
-user2 | Парола: 3211 | може да регистрира токени, но не може да изисква номера на карти
-user3 | Парола: 111  | не може да регистрира токени и не може да изисква номера на карти
+admin | Парола: 1234 | Can register tokens. Can require card numbers by token
+user1 | Парола: 321  | Cannont register tokens. Can required card numbers by token
+user2 | Парола: 3211 | Can register tokens. Cannot require card numbers by token
+user3 | Парола: 111  | Cannot register tokens. Cannot require card numbers by token
