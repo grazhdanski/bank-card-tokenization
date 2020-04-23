@@ -1,0 +1,47 @@
+﻿<Window x:Class="TokenizationClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TokenizationClient"
+        mc:Ignorable="d"
+        Title="Tokenization Client" Height="493.22" Width="825.424" Closing="Window_Closing">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="User Name" FontSize="23"/>
+        <TextBox x:Name="txtBoxUserName" Grid.Row="0" Grid.Column="0"  Margin="6,42,54,18" FontSize="21"
+                 Padding="5"/>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Password" FontSize="23"/>
+        <PasswordBox x:Name="txtBoxPassword" Grid.Row="1" Grid.Column="0"  Margin="6,42,54,18" FontSize="21"
+                 Padding="5"/>
+
+        <Label Grid.Row="2" Grid.Column="0" Content="Card Number" FontSize="23"/>
+        <TextBox x:Name="txtBoxCardNumber" Grid.Row="2" Grid.Column="0"  Margin="6,42,54,18" FontSize="21"
+                 Padding="5"/>
+        <Label Grid.Row="3" Grid.Column="0" Content="Token" FontSize="23"/>
+        <TextBox x:Name="txtBoxToken" Grid.Row="3" Grid.Column="0"  Margin="6,42,54,18" FontSize="21"
+                 Padding="5"/>
+
+        <Label Content="Connection Log" Grid.Row="0" Grid.Column="1" FontSize="23" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="txtConnectionLog" Grid.Column="1" Grid.RowSpan="3" FontSize="15" Margin="0,42,0,69" Padding="5" TextWrapping="WrapWithOverflow" IsReadOnly="True"/>
+
+        <StackPanel Grid.Row="2" Grid.Column="1" Margin="0,54,0,-54" Grid.RowSpan="2">
+            <Button x:Name="btnRegisterToken" Content="Register Token" Height="30" Margin="7" FontSize="18" Click="btnRegisterToken_Click"/>
+            <Button x:Name="btnRequestCardNumber" Content="Request Card Number" Height="30" Margin="7 0 7 7" FontSize="18" Click="btnRequestCardNumber_Click"/>
+            <Button x:Name="btnSaveByCardNumber" Content="Save Entries By Card Number" Height="30" Margin="7 0 7 7" FontSize="18" Click="btnSaveByCardNumber_Click"/>
+            <Button x:Name="btnSaveByToken" Content="Save Entries By Token" Height="30" Margin="7,0" FontSize="18" Click="btnSaveByToken_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
